@@ -3,88 +3,17 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Нэвтрэх хэсэг</title>
-    <link rel="stylesheet" href="style.css" />
+    <title>Систем</title>
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css" />
   </head>
   <body>
-    <div class="hero">
-      <div class="form-box">
-        <div class="button-box">
-          <div id="btn"></div>
-          <button type="button" class="toggle-btn" onclick="login()">
-            Нэвтрэх
-          </button>
-          <button type="button" class="toggle-btn" onclick="register()">
-            Бүртгүүлэх
-          </button>
-        </div>
-        <div class="social-icons">
-          <img src="./images/facebook.png" />
-          <img src="./images/instagram.png" />
-          <img src="./images/twitter.png" />
-        </div>
-
-        <form id="login" class="input-group">
-          <input
-            type="text"
-            class="input-field"
-            placeholder="Нэвтрэх нэр"
-            required
-          />
-          <input
-            type="text"
-            class="input-field"
-            placeholder="Нууц үг"
-            required
-          />
-          <input type="checkbox" class="check-box" /><span>Нууц үг санах</span>
-
-          <button type="submit" class="submit-btn">Нэвтрэх</button>
-        </form>
-        <form id="register" class="input-group">
-          <input
-            type="text"
-            class="input-field"
-            placeholder="Нэвтрэх нэр"
-            required
-          />
-          <input
-            type="email"
-            class="input-field"
-            placeholder="И-мэйл хаяг"
-            required
-          />
-          <input
-            type="text"
-            class="input-field"
-            placeholder="Нууц үг"
-            required
-          />
-          <input type="checkbox" class="check-box" /><span
-            >Би зөвшөөрч байна</span
-          >
-          <button type="submit" class="submit-btn">Бүртгүүлэх</button>
-        </form>
+    <section class="section">
+      <div>
+        <button type="button" class="btn btn-primary">Борлуулалт</button>
+        <button type="button" class="btn btn-success">Худалдан авалт</button>
+        <button type="button" class="btn btn-danger">Агуулах</button>
       </div>
-    </div>
-
-    <div>
-      <script>
-        var x = document.getElementById("login");
-        var y = document.getElementById("register");
-        var z = document.getElementById("btn");
-
-        function register() {
-          x.style.left = "-400px";
-          y.style.left = "50px";
-          z.style.left = "110px";
-        }
-        function login() {
-          x.style.left = "50px";
-          y.style.left = "450px";
-          z.style.left = "0";
-        }
-      </script>
-    </div>
+    </section>
   </body>
 </html>

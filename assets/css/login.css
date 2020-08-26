@@ -4,8 +4,8 @@
   font-family: sans-serif;
 }
 
-html {
-  background: url(./images/banner.jpg) no-repeat center center fixed;
+body {
+  background: url(/assets/images/banner.jpg) no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -120,4 +120,9 @@ span {
 
 #register {
   left: 450px;
+}
+
+a {
+  text-decoration: none;
+  color: black;
 }
